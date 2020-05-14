@@ -76,7 +76,7 @@ volumeBindingMode: Immediate
 There are sample yaml files in the [resources](resources) directory of this repo.
 
 
-Now, apply the files in order and bind the *ClusterRole* to the provisioner:
+Now, apply the files in order and bind the *ClusterRole* to the `system:serviceaccount:kube-system:persistent-volume-binder` user:
 
 ```
 $ oc apply -f azure-file-clusterrole.yaml
