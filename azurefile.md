@@ -41,12 +41,7 @@ Make note of the UID, you will need it soon.
 
 ## Enable Azure File in OpenShift
 
-First, create a new project for the Azure File StorageClass:
-```
-oc new-project azure-file-storageclass
-```
-
-In this project, create a new Role, RoleBinding, and StorageClass:
+You will need a new `ClusterRole` and a `StorageClass`.
 
 **azure-file-clusterrole.yaml**
 ```
