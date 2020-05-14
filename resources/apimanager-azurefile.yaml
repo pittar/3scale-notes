@@ -1,0 +1,12 @@
+apiVersion: apps.3scale.net/v1alpha1
+kind: APIManager
+metadata:
+  name: 3scale
+  namespace: 3scale
+spec:
+  wildcardDomain: apps.ocp.azure.pitt.ca
+  resourceRequirementsEnabled: false
+  system:
+    fileStorage:
+      persistentVolumeClaim:
+        storageClassName: 3scale-azure-file
