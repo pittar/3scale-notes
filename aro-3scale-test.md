@@ -131,3 +131,5 @@ Apply this resource to your cluster and wait for 3Scale to install.  It will tak
 ```
 oc apply -f api-manager.yaml -n 3scale
 ```
+
+You may see pods failing and re-starting during the install. This is normal, so be patient.
