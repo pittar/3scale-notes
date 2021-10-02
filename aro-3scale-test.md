@@ -6,7 +6,6 @@ First, create a 3Scale project and apply your Red Hat pull secret.  You can gene
 
 ```
 oc new-project 3scale
-oc apply -f <pull secret>.yaml -n 3scale
 ```
 
 ## Step 2: Create Two New Azure File Storage Classes
